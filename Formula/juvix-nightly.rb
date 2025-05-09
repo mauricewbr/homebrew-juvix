@@ -2,19 +2,19 @@ class JuvixNightly < Formula
   desc "The Juvix Compiler Nightly Build"
   homepage "https://github.com/anoma/juvix-nightly"
 
-  juvix_version = "0.6.9-6ff4d88"
+  juvix_version = "0.6.10-682a6fa"
   version juvix_version
 
-  nightly_tag = "nightly-2025-01-23-#{juvix_version}"
+  nightly_tag = "nightly-2025-05-06-#{juvix_version}"
 
   on_macos do
     on_intel do
       url  "https://github.com/anoma/juvix-nightly-builds/releases/download/#{nightly_tag}/juvix-darwin-x86_64.tar.gz"
-      sha256 "b5d5466430491547f34399e3e430d150675caff7ec4976bcf11a58e48c460d7e"
+      sha256 "35f1ce5035816b21693df667259a646d870efa797796a298ba6f724908c6b966"
     end
     on_arm do
       url "https://github.com/anoma/juvix-nightly-builds/releases/download/#{nightly_tag}/juvix-darwin-aarch64.tar.gz"
-      sha256 "8e50abe026662134ffb1a0a417d171f93509635d7b08980006ff2a789e20cd7d"
+      sha256 "15689f73914dd1893e735910c666bcfd17db8dc76a14d66ba2ff7a8e42ec9e99"
     end
   end
 
